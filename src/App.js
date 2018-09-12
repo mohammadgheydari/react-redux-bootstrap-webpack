@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
 import './App.scss';
-import User from "./Components/User";
-import Main from "./Components/Main";
-import { connect } from "react-redux";
-import { setName } from "./Actions/userActions"
+import Layout from "./Components/Shared/Layout";
+import { Provider } from 'react-redux'
+import store from "./store"
+
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main changeUsername={() => this.props.setName("Anna")} />
-        <User username={this.props.user.name} />
+        {/* <Main changeUsername={() => this.props.setName("Anna")} /> */}
+        {/* <User username={this.props.user.name} /> */}
+        <Provider store={store}>
+          <Layout />
+        </Provider>
+
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    user: state.user,
-    math: state.math
-  }
-}
-const mapDispatchToProps = (dispatch) => {
-  return {
-    setName: (name) => {
-      dispatch(setName(name))
-    }
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+export default App;

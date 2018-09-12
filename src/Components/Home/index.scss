@@ -1,0 +1,110 @@
+.search-container{
+  background-color: #4a92e6;
+  background-image: url("../../images/home-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 110px 0 50px;
+  margin-top: -100px;
+  min-height: 550px;
+}
+
+.homePageHeading{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.suggestionsDropdown {
+  background: #fff;
+  position: absolute;
+  width: 94%;
+  top: 200px;
+  text-align: right;
+  z-index: 99;
+  padding: 0;
+  box-shadow: 0 3px 5px 0 rgba(23, 35, 44, 0.2);
+  max-height: 500px;
+  overflow-y: auto;
+  display: none;
+  opacity: 0;
+}
+.suggestionsDropdown.active {
+  display: block;
+  opacity: 1;
+  top: 79px;
+  animation-name: SlideUp;
+  animation-duration: 150ms;
+}
+.suggestionsDropdown .heading {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.suggestionsDropdown li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #fafafa;
+  transition: all 150ms ease;
+}
+.suggestionsDropdown li:hover {
+  background-color: #f1f4f7;
+  color: #111;
+}
+.suggestionsDropdown li:before {
+  list-style-type: none;
+}
+.suggestionsDropdown .material-icons {
+  position: relative;
+  top: 7px;
+  right: 2px;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  display: block;
+}
+
+.flightio-input {
+  border: 1px solid #ddd !important;
+  border-radius: 0 !important;
+  height: calc(2.8rem + 2px) !important;
+  color: #333;
+  position: relative;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #cfcfcf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    top: 150px;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    top: 79px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
