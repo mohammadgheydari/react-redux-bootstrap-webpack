@@ -1,0 +1,51 @@
+.DynamicBox {
+    width: 96%;
+    margin: 5px auto;
+    display: block;
+    text-align: center;
+    transition: all 300ms ease;
+    position: relative;
+    overflow: hidden;
+}
+.DynamicBox:hover {
+    -webkit-box-shadow: -1px 6px 13px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -1px 6px 13px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 6px 13px 0 rgba(0, 0, 0, 0.14);
+}
+.DynamicBox img {
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.DynamicBox:hover img {
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+}
+.DynamicBox h2{ 
+    position: absolute;
+    bottom: 35px;
+    font-size: 17px;
+    text-align: right;
+    display: block;
+    width: 86%;
+    font-weight: bold;
+    color: #fff;
+    right: 7%;
+    left: 0;
+    border-top: 2px solid #fff;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.DynamicBox p{
+    position: absolute;
+    bottom: -9px;
+    font-size: 14px;
+    text-align: right;
+    display: block;
+    width: 86%;
+    color: #fff;
+    right: 7%;
+    left: 0;
+}

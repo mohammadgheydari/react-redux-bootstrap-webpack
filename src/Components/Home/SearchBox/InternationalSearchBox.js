@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import SuggestionInput from "../SuggestionInput";
 import JDatePicker from "../../Helper/Datepicker/Datepicker";
-import RadioButton from "../../Helper/RadioButton/RadioButton";
 import axios from "axios";
 import "../../Shared/Api";
 import ButtonLoader from "../../Helper/ButtonLoader/ButtonLoader";
-
 
 class Domestic extends Component {
   constructor(props) {
@@ -13,7 +11,7 @@ class Domestic extends Component {
     this.state = {
       // startDate: moment(),
       // endDate: moment(),
-      loading: false,
+      loading: false
       // value: moment_jalaali().format('jYYYY/jM/jD')
     };
     // this.handleChangeStart = this.handleChangeStart.bind(this);
@@ -81,7 +79,7 @@ class Domestic extends Component {
       method: "post",
       url: "SearchFlight",
       data: data
-    }).then(function (res) {
+    }).then(function(res) {
       window.location.assign(
         "/Flight/" + sourceCode + "/" + destinationCode + "/" + res.data
       );
@@ -92,7 +90,6 @@ class Domestic extends Component {
     return (
       <React.Fragment>
         <form onSubmit={this.handleSubmit}>
-
           <div className="card shadow-sm p-3 mb-5 bg-white rounded">
             <div className="card-body">
               <div className="row">

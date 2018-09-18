@@ -80,7 +80,7 @@ class Domestic extends Component {
       method: "post",
       url: "SearchFlight",
       data: data
-    }).then(function (res) {
+    }).then(function(res) {
       this.props.history.push(
         "/Flight/" + sourceCode + "/" + destinationCode + "/" + res.data
       );
@@ -95,7 +95,7 @@ class Domestic extends Component {
           <div className="card shadow-sm p-3 mb-5 bg-white rounded">
             <div className="card-body">
               <div className="row">
-                <div class="col-xs-12 col-sm-12">
+                <div className="col-xs-12 col-sm-12">
                   <RadioButton
                     text="رفت و برگشت"
                     inputId="1"

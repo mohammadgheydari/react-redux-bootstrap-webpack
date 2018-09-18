@@ -8,7 +8,7 @@ class ButtonLoader extends Component {
       <button
         className={this.props.classes + " buttonLoader"}
         type={this.props.type}
-        loading={this.props.loading}
+        loading={this.props.loading.toString()}
         disabled={this.props.loading ? "disabled" : ""}
       >
         <span>{this.props.text}</span>
@@ -17,6 +17,7 @@ class ButtonLoader extends Component {
             src={Loading}
             width={this.props.LoadingWidth}
             height={this.props.LoadingHeight}
+            alt="loading"
           />
         ) : (
           <MaterialIcon

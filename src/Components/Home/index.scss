@@ -8,6 +8,31 @@
   margin-top: -100px;
   min-height: 550px;
 }
+.search-container .rwt__tabs {
+  background: rgba(0, 2, 0, 0.3);
+  padding: 7px;
+  border-radius: 5px;
+}
+.search-container .rwt__tab {
+  background-color: transparent;
+  font-size: 17px;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: bold;
+  border: none;
+  transition: all 200ms ease
+}
+.search-container .rwt__tab .material-icons {
+  color: inherit;
+}
+
+.search-container .rwt__tab[aria-selected="true"]{
+  background-color: #fff;
+  color: #ff7200;
+  outline: none;
+  border-radius: 5px 5px 0 0;
+  
+}
 
 .homePageHeading{
   font-size: 28px;

@@ -1,0 +1,51 @@
+.box-feature.text-center {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box-feature.top-box-padding {
+    padding: 0 10px;
+}
+.box-feature .about-ico {
+    margin: 20px auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.HomeUSP .about-ico {
+    border: none;
+}
+.box-feature .about-ico i, .box-about .about-ico i {
+    background: #fff;
+    color: #4FC3F7;
+    display: table-cell;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-size: 40px;
+    position: relative;
+    vertical-align: middle;
+    margin: 0px auto;
+    height: 80px;
+    width: 80px;
+}
+.HomeUSP .about-ico i {
+    font-size: 80px;
+    color: #4aa5f6;
+}
+.HomeUSP .about-title {
+    margin-right: 0;
+    text-align: center;
+    font-size: 17px;
+}
+.HomeUSP .title-description {
+    color: #343434;
+    margin: 10px 0 20px; 
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+    text-align: right;
+}

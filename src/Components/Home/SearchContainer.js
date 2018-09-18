@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import FlightioTabs from "../Helper/Tabs/Tabs"
 import "./index.scss";
 import UnderSearchbox from "./UnderSearchbox"
+import DynamicBox from './DynamicBox/DynamicBox';
+import BestDestination from './BestDestination/BestDestination';
+import HomeUSP from './HomeUSP/HomeUSP';
 
 class SearchContainer extends Component {
     state = {}
@@ -19,6 +22,9 @@ class SearchContainer extends Component {
                     </div>
                 </div>
                 <UnderSearchbox />
+                <DynamicBox />
+                <BestDestination />
+                <HomeUSP />
             </React.Fragment>
         );
     }

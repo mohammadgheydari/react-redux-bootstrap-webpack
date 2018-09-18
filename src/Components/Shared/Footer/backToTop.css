@@ -1,0 +1,29 @@
+.back-to-top {
+  font-size: 20px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #ebeced;
+  color: #666;
+  border-radius: 100%;
+  bottom: 30px;
+  /* display: none; */
+  height: 64px;
+  position: fixed;
+  left: 20px;
+  width: 64px;
+  opacity: 0.9;
+  z-index: 5;
+  line-height: 67px;
+  outline: none;
+  cursor: pointer;
+}
+.back-to-top i {
+  font-size: 35px !important;
+  margin-top: 11px;
+  display: block;
+  text-align: center;
+  margin-right: -2px;
+}
